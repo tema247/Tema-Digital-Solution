@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tema Digital Solution delivers innovative digital services, web development, AI-powered tools, cloud solutions and technology consulting.">
+  <title>Tema Digital Solution | Innovating Today</title>
+  <style>
+    :root {
+      --navy: #07152f;
+      --blue: #1769e0;
+      --gold: #f4bd50;
+      --light: #f4f7fc;
+      --text: #24334d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      background: white;
+    }
+    a { text-decoration: none; }
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .logo { font-size: 21px; font-weight: 800; }
+    .logo span { color: var(--gold); }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    nav a { color: white; font-size: 14px; }
+    nav a:hover { color: var(--gold); }
+    .hero {
+      color: white;
+      text-align: center;
+      padding: 105px 7%;
+      background: linear-gradient(120deg, #07152f, #123f88, #482b80);
+    }
+    .hero .tag {
+      color: var(--gold);
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.15;
+      margin: 20px auto;
+      max-width: 850px;
+    }
+    .hero p { max-width: 680px; margin: 0 auto 25px; color: #e1eaff; }
+    .btn {
+      display: inline-block;
+      padding: 12px 23px;
+      border-radius: 7px;
+      font-weight: bold;
+      margin: 7px;
+    }
+    .primary { background: var(--gold); color: var(--navy); }
+    .secondary { border: 1px solid white; color: white; }
+    section { padding: 70px 7%; }
+    .section-title { text-align: center; margin-bottom: 35px; }
+    .section-title h2 { color: var(--navy); font-size: 30px; }
+    .section-title p { color: #68758b; }
+    .about { background: var(--light); text-align: center; }
+    .about p { max-width: 850px; margin: auto; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .service, .feature, .step, .quote {
+      padding: 25px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 5px 25px rgba(12, 36, 75, .08);
+    }
+    .service h3, .feature h3, .step h3 {
+      color: var(--navy);
+      margin-bottom: 9px;
+    }
+    .service .symbol { font-size: 30px; margin-bottom: 10px; }
+    .why { background: var(--light); }
+    .steps { background: white; }
+    .global { background: #f4f7fc; }
+    .quote { border-left: 4px solid var(--gold); }
+    .quote strong { display: block; margin-top: 15px; color: var(--navy); }
+    .quote small { color: #68758b; }
+    .launch {
+      text-align: center;
+      background: linear-gradient(120deg, #0a1c3b, #174e9d);
+      color: white;
+    }
+    .launch h2 { color: var(--gold); font-size: 32px; }
+    .contact { text-align: center; }
+    .contact p { margin: 10px 0; }
+    .contact a { color: var(--blue); font-weight: bold; }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: var(--navy);
+      color: #dce6fa;
+      font-size: 14px;
+    }
+    .whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      background: #20b866;
+      color: white;
+      padding: 13px 17px;
+      border-radius: 30px;
+      font-weight: bold;
+      box-shadow: 0 4px 15px #0003;
+      z-index: 5;
+    }
+    @media(max-width: 600px) {
+      header { justify-content: center; text-align: center; }
+      nav { justify-content: center; gap: 12px; }
+      .hero { padding: 75px 6%; }
+      section { padding: 55px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">TEMA <span>DIGITAL SOLUTION</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero" id="home">
+    <div class="tag">WELCOME TO TEMA DIGITAL SOLUTION</div>
+    <h1>Innovating Today, Connecting Tomorrow.</h1>
+    <p>
+      We bring ideas to life through smart technology, creative digital
+      solutions and practical innovation that help people and businesses grow.
+    </p>
+    <a class="btn primary" href="#services">Explore Our Services</a>
+    <a class="btn secondary" href="#contact">Contact Us</a>
+  </div>
+
+  <section class="about" id="about">
+    <div class="section-title">
+      <h2>About Tema Digital Solution</h2>
+      <p>Technology with purpose. Innovation with impact.</p>
+    </div>
+    <p>
+      Tema Digital Solution is a technology-focused brand committed to helping
+      individuals, entrepreneurs and organizations make better use of digital
+      technology. We focus on creativity, practical support and modern tools
+      that strengthen online presence, improve productivity and support growth.
+      Our vision is to connect people and opportunities through technology.
+    </p>
+  </section>
+
+  <section id="services">
+    <div class="section-title">
+      <h2>What We Do</h2>
+      <p>Digital solutions designed for a connected world.</p>
+    </div>
+    <div class="grid">
+      <div class="service">
+        <div class="symbol">💻</div>
+        <h3>Web Development</h3>
+        <p>Modern, responsive websites that help businesses build a strong online presence.</p>
+      </div>
+      <div class="service">
+        <div class="symbol">📱</div>
+        <h3>App Development</h3>
+        <p>Digital application solutions designed around useful everyday needs.</p>
+      </div>
+      <div class="service">
+        <div class="symbol">☁️</div>
+        <h3>Cloud Solutions</h3>
+        <p>Cloud-based tools and digital workflows to support collaboration and efficiency.</p>
+      </div>
+      <div class="service">
+        <div class="symbol">📢</div>
+        <h3>Digital Marketing</h3>
+        <p>Online visibility, digital campaigns and brand growth strategies.</p>
+      </div>
+      <div class="service">
+        <div class="symbol">🤖</div>
+        <h3>AI-Powered Tools</h3>
+        <p>Explore artificial intelligence to simplify tasks and improve productivity.</p>
+      </div>
+      <div class="service">
+        <div class="symbol">🧠</div>
+        <h3>Technology Consulting</h3>
+        <p>Practical guidance to help you choose and use the right digital solutions.</p>
+      </div>
+      <div class="service">
+        <div class="symbol">🎓</div>
+        <h3>Digital Skills & Support</h3>
+        <p>Digital learning and support to build confidence using modern technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <div class="section-title">
+      <h2>Why Choose Us?</h2>
+      <p>Our values guide every solution we create.</p>
+    </div>
+    <div class="grid">
+      <div class="feature">
+        <h3>✨ Innovation</h3>
+        <p>We embrace fresh ideas and modern technology.</p>
+      </div>
+      <div class="feature">
+        <h3>🤝 Reliability</h3>
+        <p>We value clear communication and dependable support.</p>
+      </div>
+      <div class="feature">
+        <h3>🔒 Security-minded</h3>
+        <p>We recognize the importance of responsible digital practices.</p>
+      </div>
+      <div class="feature">
+        <h3>🌍 Global Outlook</h3>
+        <p>We welcome opportunities to connect with people and businesses worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="section-title">
+      <h2>How We Work</h2>
+      <p>A simple approach to turning ideas into digital solutions.</p>
+    </div>
+    <div class="grid">
+      <div class="step">
+        <h3>01. Discover</h3>
+        <p>We learn about your goals, needs and challenges.</p>
+      </div>
+      <div class="step">
+        <h3>02. Plan & Create</h3>
+        <p>We identify a suitable approach and develop a practical solution.</p>
+      </div>
+      <div class="step">
+        <h3>03. Grow</h3>
+        <p>We help you move forward with digital tools and ongoing improvement.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="global">
+    <div class="section-title">
+      <h2>A Global Vision</h2>
+      <p>Building connections beyond borders.</p>
+    </div>
+    <div class="grid">
+      <div class="quote">
+        <h3>🇳🇬 Nigeria</h3>
+        <p>Our goal is to help businesses build a stronger digital presence and reach more customers.</p>
+        <strong>What we aim to deliver</strong>
+        <small>Service commitment — not a customer testimonial</small>
+      </div>
+      <div class="quote">
+        <h3>🇨🇲 Cameroon</h3>
+        <p>We believe practical technology can create opportunities for individuals and communities.</p>
+        <strong>What we aim to deliver</strong>
+        <small>Service commitment — not a customer testimonial</small>
+      </div>
+      <div class="quote">
+        <h3>🇬🇧 United Kingdom</h3>
+        <p>We welcome collaboration and digital opportunities with people and organizations worldwide.</p>
+        <strong>Our global outlook</strong>
+        <small>Brand statement — not a customer testimonial</small>
+      </div>
+      <div class="quote">
+        <h3>🌍 Worldwide</h3>
+        <p>Our ambition is to make useful digital solutions more accessible across borders.</p>
+        <strong>Our vision</strong>
+        <small>Brand statement — not a customer testimonial</small>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:22px">
+      Verified customer testimonials will be added as clients share feedback and grant permission to publish it.
+    </p>
+  </section>
+
+  <section class="launch">
+    <h2>Official Launch</h2>
+    <p>Join us as we begin a new digital journey.</p>
+    <h3>14 February 2027</h3>
+    <p>Innovating Today, Connecting Tomorrow.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-title">
+      <h2>Let's Connect</h2>
+      <p>Have an idea or project? Let's talk about it.</p>
+    </div>
+    <p><strong>WhatsApp:</strong>
+      <a href="https://wa.me/2349121877355" target="_blank" rel="noopener">
+        +234 912 187 7355
+      </a>
+    </p>
+    <p><strong>Email:</strong>
+      <a href="mailto:temadigitalsolution@gmail.com">
+        temadigitalsolution@gmail.com
+      </a>
+    </p>
+    <a class="btn primary" href="https://wa.me/2349121877355" target="_blank" rel="noopener">
+      Chat With Us on WhatsApp
+    </a>
+  </section>
+</main>
+
+<footer>
+  <p>© 2027 Tema Digital Solution. All Rights Reserved.</p>
+  <p>Innovating Today, Connecting Tomorrow.</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/2349121877355" target="_blank" rel="noopener">
+  WhatsApp Us
+</a>
+
+</body>
+</html>
