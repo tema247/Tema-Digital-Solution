@@ -1,38 +1,518 @@
-<section class="launch" id="launch">
-  <h2>Official Launch</h2>
-  <p>Join us as we begin a new digital journey.</p>
-  <h3>14 February 2027</h3>
 
-  <div id="countdown" style="font-size:25px;font-weight:bold;margin:25px 0;">
-    Loading countdown...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tema Digital Solution - Innovative digital services, AI tools, web development and technology solutions.">
+<title>Tema Digital Solution | Official Website</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Arial, sans-serif;
+  color: #26344c;
+  line-height: 1.7;
+}
+
+header {
+  background: #07152f;
+  color: white;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.logo span { color: #f4bd50; }
+
+nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover { color: #f4bd50; }
+
+.hero {
+  text-align: center;
+  padding: 105px 7%;
+  color: white;
+  background: linear-gradient(125deg, #07152f, #164b9b, #482b80);
+}
+
+.hero .tag {
+  color: #f4bd50;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(35px, 6vw, 58px);
+  line-height: 1.2;
+  margin: 20px auto;
+  max-width: 850px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto auto 25px;
+  color: #e5edff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 23px;
+  border-radius: 7px;
+  margin: 7px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.gold {
+  background: #f4bd50;
+  color: #07152f;
+}
+
+.outline {
+  border: 1px solid white;
+  color: white;
+}
+
+section { padding: 70px 7%; }
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  color: #07152f;
+  font-size: 30px;
+}
+
+.section-title p { color: #718096; }
+
+.about {
+  background: #f4f7fc;
+  text-align: center;
+}
+
+.about p {
+  max-width: 850px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.service, .feature, .step, .global-card {
+  padding: 25px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 5px 25px rgba(12,36,75,.08);
+}
+
+.service h3, .feature h3, .step h3 {
+  color: #07152f;
+  margin-bottom: 10px;
+}
+
+.symbol {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.why { background: #f4f7fc; }
+
+.global { background: #f4f7fc; }
+
+.global-card {
+  border-left: 4px solid #f4bd50;
+}
+
+.launch {
+  text-align: center;
+  color: white;
+  background: linear-gradient(120deg, #07152f, #164b9b);
+}
+
+.launch h2 {
+  font-size: 34px;
+  color: #f4bd50;
+}
+
+.launch-date {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(65px, 1fr));
+  gap: 12px;
+  max-width: 650px;
+  margin: 30px auto;
+}
+
+.time-box {
+  padding: 18px 5px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 10px;
+}
+
+.time-box strong {
+  display: block;
+  font-size: clamp(22px, 5vw, 35px);
+  color: #f4bd50;
+}
+
+.time-box span { font-size: 12px; }
+
+.contact { text-align: center; }
+
+.contact p { margin: 12px 0; }
+
+.contact a {
+  color: #1769e0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  background: #07152f;
+  color: #dce6fa;
+  padding: 25px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 17px;
+  bottom: 17px;
+  background: #20b866;
+  color: white;
+  padding: 13px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 10;
+  box-shadow: 0 4px 15px #0003;
+}
+
+@media(max-width:600px) {
+  header { justify-content: center; text-align: center; }
+  nav { justify-content: center; }
+  .hero { padding: 75px 6%; }
+  section { padding: 55px 6%; }
+  .countdown { gap: 6px; }
+  .time-box { padding: 13px 3px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">TEMA <span>DIGITAL SOLUTION</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#launch">Launch</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<div class="hero" id="home">
+  <div class="tag">WELCOME TO TEMA DIGITAL SOLUTION</div>
+  <h1>Innovating Today, Connecting Tomorrow.</h1>
+  <p>
+    We bring ideas to life through smart technology, creative digital
+    solutions and practical innovation that help people and businesses grow.
+  </p>
+  <a class="btn gold" href="#services">Explore Our Services</a>
+  <a class="btn outline" href="#contact">Contact Us</a>
+</div>
+
+<section class="about" id="about">
+  <div class="section-title">
+    <h2>About Tema Digital Solution</h2>
+    <p>Technology with purpose. Innovation with impact.</p>
   </div>
-
-  <p>Innovating Today, Connecting Tomorrow.</p>
+  <p>
+    Tema Digital Solution is a technology-focused brand committed to helping
+    individuals, entrepreneurs and organizations make better use of digital
+    technology. We focus on creativity, practical support and modern tools
+    that strengthen online presence, improve productivity and support growth.
+    Our vision is to connect people and opportunities through technology.
+  </p>
 </section>
 
+<section id="services">
+  <div class="section-title">
+    <h2>What We Do</h2>
+    <p>Digital solutions designed for a connected world.</p>
+  </div>
+
+  <div class="grid">
+    <div class="service">
+      <div class="symbol">💻</div>
+      <h3>Web Development</h3>
+      <p>Modern, responsive websites that help businesses build a strong online presence.</p>
+    </div>
+
+    <div class="service">
+      <div class="symbol">📱</div>
+      <h3>App Development</h3>
+      <p>Digital application solutions designed around useful everyday needs.</p>
+    </div>
+
+    <div class="service">
+      <div class="symbol">☁️</div>
+      <h3>Cloud Solutions</h3>
+      <p>Cloud-based tools and workflows that support collaboration and efficiency.</p>
+    </div>
+
+    <div class="service">
+      <div class="symbol">📢</div>
+      <h3>Digital Marketing</h3>
+      <p>Online visibility, digital campaigns and brand growth strategies.</p>
+    </div>
+
+    <div class="service">
+      <div class="symbol">🤖</div>
+      <h3>AI-Powered Tools</h3>
+      <p>Artificial intelligence solutions to simplify tasks and improve productivity.</p>
+    </div>
+
+    <div class="service">
+      <div class="symbol">🧠</div>
+      <h3>Technology Consulting</h3>
+      <p>Practical guidance to help you choose and use the right digital solutions.</p>
+    </div>
+
+    <div class="service">
+      <div class="symbol">🎓</div>
+      <h3>Digital Skills & Support</h3>
+      <p>Digital learning and support to build confidence with modern technology.</p>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="section-title">
+    <h2>Why Choose Us?</h2>
+    <p>Our values guide every solution we create.</p>
+  </div>
+
+  <div class="grid">
+    <div class="feature">
+      <h3>✨ Innovation</h3>
+      <p>We embrace fresh ideas and modern technology.</p>
+    </div>
+
+    <div class="feature">
+      <h3>🤝 Reliability</h3>
+      <p>We value clear communication and dependable support.</p>
+    </div>
+
+    <div class="feature">
+      <h3>🔒 Security-minded</h3>
+      <p>We recognize the importance of responsible digital practices.</p>
+    </div>
+
+    <div class="feature">
+      <h3>🌍 Global Outlook</h3>
+      <p>We welcome opportunities to connect with people and businesses worldwide.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <h2>How We Work</h2>
+    <p>A simple approach to turning ideas into digital solutions.</p>
+  </div>
+
+  <div class="grid">
+    <div class="step">
+      <h3>01. Discover</h3>
+      <p>We learn about your goals, needs and challenges.</p>
+    </div>
+
+    <div class="step">
+      <h3>02. Plan & Create</h3>
+      <p>We identify a suitable approach and develop a practical solution.</p>
+    </div>
+
+    <div class="step">
+      <h3>03. Grow</h3>
+      <p>We help you move forward with digital tools and improvement.</p>
+    </div>
+  </div>
+</section>
+
+<section class="global">
+  <div class="section-title">
+    <h2>A Global Vision</h2>
+    <p>Building connections beyond borders.</p>
+  </div>
+
+  <div class="grid">
+    <div class="global-card">
+      <h3>🇳🇬 Nigeria</h3>
+      <p>Supporting businesses with stronger digital presence and online opportunities.</p>
+    </div>
+
+    <div class="global-card">
+      <h3>🇨🇲 Cameroon</h3>
+      <p>Promoting practical technology and digital opportunities for communities.</p>
+    </div>
+
+    <div class="global-card">
+      <h3>🇬🇧 United Kingdom</h3>
+      <p>Welcoming collaboration and digital opportunities across borders.</p>
+    </div>
+
+    <div class="global-card">
+      <h3>🌍 Worldwide</h3>
+      <p>Making useful digital solutions more accessible around the world.</p>
+    </div>
+  </div>
+
+  <p style="text-align:center;margin-top:22px">
+    We look forward to sharing verified customer experiences as our community grows.
+  </p>
+</section>
+
+<section class="launch" id="launch">
+  <h2>Our Official Launch</h2>
+  <p>Join us as we begin a new digital journey.</p>
+  <div class="launch-date">14 February 2027</div>
+  <p>Countdown to a new beginning!</p>
+
+  <div class="countdown">
+    <div class="time-box">
+      <strong id="days">00</strong>
+      <span>Days</span>
+    </div>
+    <div class="time-box">
+      <strong id="hours">00</strong>
+      <span>Hours</span>
+    </div>
+    <div class="time-box">
+      <strong id="minutes">00</strong>
+      <span>Minutes</span>
+    </div>
+    <div class="time-box">
+      <strong id="seconds">00</strong>
+      <span>Seconds</span>
+    </div>
+  </div>
+
+  <p id="launch-message">Don't miss it! Something exciting is coming.</p>
+  <p style="margin-top:15px;color:#f4bd50">
+    Innovating Today, Connecting Tomorrow.
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-title">
+    <h2>Let's Connect</h2>
+    <p>Have an idea or project? Let's talk about it.</p>
+  </div>
+
+  <p>
+    <strong>WhatsApp:</strong>
+    <a href="https://wa.me/2349121877355" target="_blank" rel="noopener">
+      +234 912 187 7355
+    </a>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <a href="mailto:temadigitalsolution@gmail.com">
+      temadigitalsolution@gmail.com
+    </a>
+  </p>
+
+  <a class="btn gold" href="https://wa.me/2349121877355" target="_blank" rel="noopener">
+    Chat With Us on WhatsApp
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2027 Tema Digital Solution. All Rights Reserved.</p>
+  <p>Innovating Today, Connecting Tomorrow.</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/2349121877355" target="_blank" rel="noopener">
+  WhatsApp Us
+</a>
+
 <script>
-  const launchDate = new Date(2027, 1, 14, 0, 0, 0).getTime();
+const launchDate = new Date("2027-02-14T00:00:00+01:00").getTime();
 
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const difference = launchDate - now;
-    const display = document.getElementById("countdown");
+function updateCountdown() {
+  const now = Date.now();
+  const difference = launchDate - now;
 
-    if (difference <= 0) {
-      display.textContent = "We are officially launched!";
-      return;
-    }
-
-    const days = Math.floor(difference / 86400000);
-    const hours = Math.floor((difference % 86400000) / 3600000);
-    const minutes = Math.floor((difference % 3600000) / 60000);
-    const seconds = Math.floor((difference % 60000) / 1000);
-
-    display.textContent =
-      days + " Days | " + hours + " Hours | " +
-      minutes + " Minutes | " + seconds + " Seconds";
+  if (difference <= 0) {
+    document.getElementById("days").textContent = "00";
+    document.getElementById("hours").textContent = "00";
+    document.getElementById("minutes").textContent = "00";
+    document.getElementById("seconds").textContent = "00";
+    document.getElementById("launch-message").textContent =
+      "We are officially launched! Welcome to Tema Digital Solution.";
+    return;
   }
 
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
+  const days = Math.floor(difference / 86400000);
+  const hours = Math.floor((difference % 86400000) / 3600000);
+  const minutes = Math.floor((difference % 3600000) / 60000);
+  const seconds = Math.floor((difference % 60000) / 1000);
+
+  document.getElementById("days").textContent = days;
+  document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+  document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+  document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
 </script>
+
+</body>
+</html>
